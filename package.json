@@ -1,0 +1,17 @@
+{
+  "name": "thread-industry-app",
+  "version": "1.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix frontend\" \"electron .\"",
+    "build": "vite build --prefix frontend",
+    "package": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "^28.1.0",
+    "concurrently": "^8.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0"
+  }
+}
